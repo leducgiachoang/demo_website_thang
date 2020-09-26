@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="css.css">
+
+    <script>
+        $(document).ready(function () {
+            $('#nut').click(function () {
+                $('.menu').show(2000);
+                $('#nut').hide();
+                $('#nut_exit').show();
+            })
+            $('#nut_exit').click(function () {
+                $('.menu').hide(1000);
+                $('#nut').show();
+                $('#nut_exit').hide();
+            })
+        })
+    </script>
+</head>
+
+<body>
+
+    <ul class="nav">
+        <div class="container">
+            <button id="nut">
+                icon
+            </button>
+            <button id="nut_exit">
+                exit
+            </button>
+            <div class="menu">
+                <a href="#">
+                    <li class="nav_item">home</li>
+                </a>
+                <a href="#">
+                    <li class="nav_item">contact</li>
+                </a>
+                <a href="#">
+                    <li class="nav_item">comne</li>
+                </a>
+                <a href="#">
+                    <li class="nav_item">Thắng hôm nay ăn gì ?</li>
+                </a>
+                <a href="#">
+                    <li class="nav_item">Thắng hôm nay ăn gì ?</li>
+                </a>
+                <a href="#">
+                    <li class="nav_item">Thắng hôm nay ăn gì ?</li>
+                </a>
+            </div>
+        </div>
+    </ul>
+
+
+    <aside class="aside">
+        <div class="container">
+            <div class="menu_sale">
+                <div class="menu_sale_item menu_sale_item_one">
+                    <div class="sieu_khuyen_mai">
+                        <p>siêu khuyến mãi</p>
+                    </div>
+                </div>
+
+                <div class="menu_sale_item menu_sale_item_two">
+                    <ul class="menu_sale_item_two__nav">
+                        <a href=""><li class="menu_sale_item_two__nav_item">nước hoa</li></a>
+                        <a href=""><li class="menu_sale_item_two__nav_item">nước hoa</li></a>
+                        <a href=""><li class="menu_sale_item_two__nav_item">nước hoa</li></a>
+                        <a href=""><li class="menu_sale_item_two__nav_item">nước hoa</li></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </aside>
+</body>
+
+</html>

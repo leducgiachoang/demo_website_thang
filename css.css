@@ -1,0 +1,122 @@
+html {
+    margin: 0;
+    background-color: blanchedalmond;
+}
+
+* {
+    margin: 0px;
+}
+
+.container {
+    width: 1123px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.nav {
+    list-style: none;
+    background-color: white;
+    padding: 20px;
+}
+
+.nav>div>div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    text-transform: uppercase;
+}
+
+#nut {
+    display: none;
+}
+
+#nut_exit {
+    display: none;
+}
+
+/* diện thoại */
+@media only screen and (max-width: 730px) {
+    html {
+        margin: 0;
+        background-color: rgb(70, 42, 0);
+    }
+
+    #nut_exit {
+        display: none;
+    }
+
+    .nav>div>div {
+        flex-direction: column;
+        display: none;
+    }
+
+    #nut {
+        display: block;
+    }
+
+    li:hover {
+        transition: 0.6s;
+        background-color: green;
+
+    }
+
+
+
+}
+
+.aside {
+    margin-top: 20px;
+}
+
+.sieu_khuyen_mai{
+    display: flex;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0%, 59% 100%, 0% 100%);
+    background-color: red;
+    width: 140px;
+    padding: 0px 68px 0px 0px;
+}
+.sieu_khuyen_mai > p{
+    margin: auto;
+    text-align: left;
+    color: white;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu_sale {
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background-color: white;
+    border: 0.5px solid darkgray;
+}
+
+.menu_sale_item_two__nav {
+    list-style: none;
+    display: flex;
+}
+
+.menu_sale_item_two__nav a {
+    text-decoration: none;
+}
+.menu_sale_item{
+    justify-items: center;
+}
+.menu_sale_item_two{
+    display: flex;
+}
+.menu_sale_item_two__nav{
+    margin: auto;
+}
+.menu_sale_item_two__nav a{
+    margin: 10px;
+}
